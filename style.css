@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
-
+<html{ 
+    background-color: #043865;
+}
 header{
     padding: 20px;
 }
@@ -7,6 +9,6 @@ header{
 h1{
     font-family: "Rubik Puddles", system-ui;
     font-size: 48px;
-    color: #1b852b;
+    color: #0e82e8;
     text-align: center;
     margin: 0;
