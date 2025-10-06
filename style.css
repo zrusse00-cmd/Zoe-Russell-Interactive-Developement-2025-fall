@@ -41,6 +41,10 @@ a:link{
     color: #0e82e8;
 }
 
+a:hover{
+    color: antiquewhite;
+}
+
 .container{
     display: flex;
     justify-content: center;
