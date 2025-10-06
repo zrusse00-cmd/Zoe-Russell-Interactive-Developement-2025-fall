@@ -1,11 +1,11 @@
 @charset "UTF-8"
 body{
-    background-color: rgb(120, 215, 255);
+    background-color: black;
 }
 
 div{
     display: grid;
     place-items: center;
     height: 100vh;
-    background-color: rgb(120, 215, 255);
+    background-color: black;
 }
