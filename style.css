@@ -45,7 +45,6 @@ li{
     font-variation-settings:
     "wdth" 100;
     color: #0e82e8;
-    text-align: center;
 }
 
 .container{
@@ -66,4 +65,5 @@ ul{
     display: inline-block;
     padding-left: 0;
     list-style-position: inside;
+    text-align: center;
 }
