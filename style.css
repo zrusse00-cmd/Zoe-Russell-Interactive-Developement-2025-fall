@@ -37,6 +37,14 @@ a{
     color: #0e82e8;
 }
 
+a:hover{
+    color: antiquewhite;
+}
+
+a:visited{
+    color:aqua;
+}
+
 .container{
     display: flex;
     justify-content: center;
