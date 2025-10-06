@@ -58,12 +58,11 @@ li{
 }
 
 .list{
-    text-align: center;
+    align-items: center;
 }
 
 ul{
     display: inline-block;
     padding-left: 0;
     list-style-position: inside;
-    text-align: center;
 }
