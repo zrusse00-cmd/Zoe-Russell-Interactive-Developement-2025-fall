@@ -3,11 +3,8 @@ body{
     background-color: rgb(120, 215, 255);
 }
 
-img{
-    align-items: center;
-    margin: 40px;
-}
-.Image-main{
-    width: 48px;
-    height: 36px;
+div{
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
