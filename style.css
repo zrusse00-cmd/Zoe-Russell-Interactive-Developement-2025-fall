@@ -37,18 +37,6 @@ a{
     color: #0e82e8;
 }
 
-li{
-     font-family: "Sour Gummy", sans-serif;
-    font-size: 30px;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    color: #0e82e8;
-    display: inline-block;
-    margin-right: 20px;
-}
-
 .container{
     display: flex;
     justify-content: center;
@@ -59,12 +47,3 @@ li{
     margin: 20px;
 }
 
-.list{
-   display: inline-block;
-}
-
-ul{
-   list-style: none;
-   padding: 0;
-   margin: 0;
-}
