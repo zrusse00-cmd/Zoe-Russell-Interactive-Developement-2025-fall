@@ -16,6 +16,16 @@ h1{
     margin: 0;
 }
 
+h3{
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 40px;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #FFFFFF;
+}
+
 a{
     font-family: "Sour Gummy", sans-serif;
     font-size: 30px;
@@ -24,4 +34,24 @@ a{
     font-variation-settings:
     "wdth" 100;
     color: #0e82e8;
+}
+
+li{
+     font-family: "Sour Gummy", sans-serif;
+    font-size: 30px;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #0e82e8;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element1,
+.element2{
+    margin: 20px;
 }
