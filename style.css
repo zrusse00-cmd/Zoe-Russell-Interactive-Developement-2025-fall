@@ -37,9 +37,23 @@ a{
     color: #0e82e8;
 }
 
+a:link{
+    color: #0e82e8;
+}
+
+a:visited{
+    color: aqua;
+}
+
 a:hover{
     color: antiquewhite;
 }
+
+a:active{
+    color: yellow;
+}
+
+
 
 .container{
     display: flex;
