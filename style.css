@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
-<html{ 
+body{ 
     background-color: #043865;
 }
 header{
     padding: 20px;
+    background-color: #043865;
 }
 
 h1{
