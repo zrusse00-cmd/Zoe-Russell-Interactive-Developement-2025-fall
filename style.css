@@ -1,0 +1,13 @@
+@import url(https://fonts.google.com/specimen/Rubik+Puddles?categoryFilters=Feeling:%2FExpressive%2FPlayful:wght@700&display=swap);
+
+header{
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Rubik',puddles;
+    font-size: 48px;
+    color: #1b852b;
+    text-align: center;
+    margin: 0;
+}
