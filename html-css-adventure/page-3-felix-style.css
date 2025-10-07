@@ -29,11 +29,14 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.a{
-    color: black;
+.link-text {
+  bottom: 10%;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
-.a:hover{
-    color: white;
+.link-text:hover {
+  color: white;
 }
-
