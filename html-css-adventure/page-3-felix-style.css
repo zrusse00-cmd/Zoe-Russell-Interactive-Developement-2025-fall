@@ -29,10 +29,10 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.a{
+.overlay-text a{
     color: black;
 }
 
-.a{
+.overlay-text a:hover{
     color: white;
 }
