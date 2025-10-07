@@ -31,3 +31,12 @@ body {
 .overlay-text{
     color: black;
 }
+
+.a{
+    color: black;
+}
+
+.a:hover{
+    color: white;
+}
+
