@@ -29,11 +29,11 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.overlay-text,.a{
+.a{
     color: black;
 }
 
-.ov.overlay-text,.a:hover{
+.a:hover{
     color: white;
 }
 
