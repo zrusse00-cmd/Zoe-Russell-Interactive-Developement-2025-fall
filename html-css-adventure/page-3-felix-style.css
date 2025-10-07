@@ -29,19 +29,10 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.normal-text {
-  bottom: 25%;   
-  font-size: 30px;
+.a{
+    color: black;
 }
 
-  .link-text {
-  bottom: 10%;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.link-text:hover {
-  color: white;
+.a{
+    color: white;
 }
