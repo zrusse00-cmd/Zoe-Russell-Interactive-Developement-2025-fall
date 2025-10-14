@@ -11,7 +11,7 @@ body {
 }
 
 .menu-container {
-  background-color: #fffdf9;
+  background-color: rgb(216, 170, 132);
   border: 1px solid #ccc;
   padding: 40px;
   max-width: 800px;
@@ -24,8 +24,9 @@ h1 {
   text-transform: lowercase;
   font-size: 2.2rem;
   margin-bottom: 30px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #000000;
   padding-bottom: 10px;
+  color: #ffffff;
 }
 
 .menu-columns {
@@ -42,8 +43,9 @@ h2 {
   font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 15px;
-  border-top: 1px solid #999;
+  border-top: 1px solid #000000;
   padding-top: 10px;
+  color: #ffffff;
 }
 
 .item {
@@ -61,7 +63,7 @@ h2 {
 /* dotted line between text and price */
 .item .dots {
   flex-grow: 1;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted #0f0e0e;
   margin: 0 8px;
   height: 0;
 }
