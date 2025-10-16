@@ -24,7 +24,7 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   font-family:"Shadows Into Light Two", cursive;
-  font-size: 100px;
+  font-size: clamp(40px, 8vw, 100px);
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }

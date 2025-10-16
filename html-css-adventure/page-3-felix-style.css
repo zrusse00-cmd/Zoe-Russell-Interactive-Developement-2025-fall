@@ -8,7 +8,14 @@ body {
 .image-container {
   position: relative;
   display: block;
-  text-align: center;
+  text-align: left;
+}
+
+.image-container {
+  width: 100%;   /* make container fluid */
+  max-width: 100%;
+  position: relative;
+  display: block;
 }
 
 .image-container img {
@@ -23,10 +30,11 @@ body {
   left: 50%;       
   transform: translate(-50%, -50%);
   color: black;
-  font-family:"Shadows Into Light Two", cursive;
-  font-size: 30px;
+  font-family: "Shadows Into Light Two", cursive;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  min-height: 0vw;  
+  font-size: clamp(16px, 10vw, 32px);  
 }
 
 .overlay-text a{
