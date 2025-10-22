@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #275a32;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Start screen */
+#startScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #275a32;
+  z-index: 10;
+}
+
+#startButton {
+  font-size: 2rem;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 40px;
+  background: #84d27e;
+  color: #275a32;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#startButton:hover {
+  background: #84d27e;
+  transform: scale(1.05);
+}
+
+/* Container with text lines */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.container.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.line.right {
+  justify-content: flex-end;
+}
+
+.line.left {
+  justify-content: flex-start;
+}
+
+.word {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: #84d27e;
+  color: #275a32;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateX(200%);
+}
+
+/* Bounce in from right animation */
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px) scale(1.1);
+  }
+  80% {
+    transform: translateX(10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Fun color variations */
+.shape:nth-child(1) { background-color: #84d27e; }
+.shape:nth-child(2) { background-color: #84d27e; }
+.shape:nth-child(3) { background-color: #84d27e; }
+.shape:nth-child(4) { background-color: #84d27e; }
+.shape:nth-child(5) { background-color: #84d27e; }
+.shape:nth-child(6) { background-color: #84d27e; }
+.shape:nth-child(7) { background-color: #84d27e; }
+.shape:nth-child(8) { background-color: #84d27e; }
