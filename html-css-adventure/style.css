@@ -28,9 +28,12 @@ body {
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
-.overlay-text{
+.overlay-text.a{
     color: black;
 }
-.overlay-text:hover {
+.overlay-text.a:hover {
   color: white;
+}
+.a{
+  color: black;
 }
