@@ -1,0 +1,153 @@
+body {
+  margin: 20px;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a2727;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Start screen */
+#startScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5a2727;
+  z-index: 10;
+}
+
+#startButton {
+  font-size: 2rem;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 40px;
+  background: #d27e7e;
+  color: #5a2727;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#startButton:hover {
+  transform: scale(1.05);
+}
+
+/* Container and lines */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.container.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: transform 0.3s ease;
+  animation: floatSide 4s ease-in-out infinite; /* Continuous side-to-side motion */
+}
+
+/* Continuous side-to-side motion */
+@keyframes floatSide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* Soft organic shapes */
+.word {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px 25px;
+  background-color: #d27e7e;
+  color: #5a2727;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateX(-200%);
+  border-radius: 35% 45% 40% 50% / 45% 35% 50% 40%;
+  transition: transform 0.3s ease;
+}
+
+/* Entry animation */
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px) scale(1.1);
+  }
+  80% {
+    transform: translateX(10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Original hover wave (gentle cascading motion) */
+@keyframes hoverWave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Cascading hover effect */
+.container:hover .line {
+  animation: hoverWave 1.5s ease-in-out infinite;
+}
+
+.container:hover .line:nth-child(1) {
+  animation-delay: 0s;
+}
+.container:hover .line:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.container:hover .line:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.container:hover .line:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
