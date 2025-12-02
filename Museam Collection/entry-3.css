@@ -1,0 +1,105 @@
+/* preserved aesthetic colors + layout */
+:root{
+  --bg: #27345a;
+  --word-bg: #7e9ed2;
+  --word-color: #27345a;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html,body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--bg);
+}
+
+/* Start screen */
+#startScreen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  z-index: 30;
+}
+
+#startButton {
+  font-size: 2rem;
+  padding: 18px 44px;
+  border: none;
+  border-radius: 40px;
+  background: var(--word-bg);
+  color: var(--word-color);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+#startButton:hover { transform: scale(1.04); }
+
+/* Arc container setup */
+.container {
+  position: relative;
+  width: 90vw;
+  max-width: 1100px;
+  height: 70vh;
+  max-height: 700px;
+  margin: 0 auto;
+  overflow: visible;
+  pointer-events: auto;
+}
+
+/* Each line is positioned absolutely so words can be placed along arcs */
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* words will handle pointer events */
+}
+
+/* word base style (keeps your colors and rounded shapes) */
+.word {
+  position: absolute; /* JS will set left/top */
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: var(--word-bg);
+  color: var(--word-color);
+  border-radius: 40px;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  transform-origin: center;
+  opacity: 0; /* entrance animation will fade in */
+  pointer-events: auto; /* enable clicks on words */
+  cursor: pointer;
+  transition: transform 700ms cubic-bezier(.2,.8,.2,1), opacity 300ms ease;
+  user-select: none;
+}
+
+/* keep shapes visually similar to original but slightly softer */
+.shape {
+  border-radius: 28% 40% 28% 40% / 40% 28% 40% 28%;
+}
+
+/* ripple-in entrance (we'll trigger per-word via JS by changing inline style) */
+/* no global bounce keyframes — entrance handled by JS-driven transitions */
+
+/* Scattered state style (applied inline from JS, class to help fallback) */
+.word.scattered {
+  transition: transform 1000ms cubic-bezier(.15,.8,.35,1), opacity 900ms ease;
+  opacity: 1;
+}
+
+/* When words are settled (after entrance), ensure opaque */
+.word.settled {
+  opacity: 1;
+}
+
+/* small responsive tweaks */
+@media (max-width: 680px) {
+  .container { height: 65vh; }
+  .word { font-size: 1.1rem; padding: 8px 14px; }
+}
