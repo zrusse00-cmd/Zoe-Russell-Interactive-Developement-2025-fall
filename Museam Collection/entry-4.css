@@ -4,7 +4,10 @@ body{
 
 /* Bubble style applied to each typed character */
 #typewriting-target span,
-#typewriting-target2 span {
+#typewriting-target2 span,
+#typewriting-target3 span,
+#typewriting-target4 span,
+#typewriting-target5 span {
   display: inline-block;
   margin: 5px;
   padding: 15px 25px;

@@ -41,7 +41,7 @@ let String2Interval = setInterval(function () {
 
 }, 10);
 
-let String3 = 'Rnd 3 [sc in next st, inc in next st] repeat 6 times ()';
+let String3 = 'Rnd 3 [sc in next st, inc in next st] repeat 6 times (16)';
 let String3TotalCharacterNumber = String3.length;
 let String3IterationIndex = 0;
 
@@ -61,8 +61,8 @@ let String3Interval = setInterval(function () {
 
 }, 10);
 
-let String4 = 'Rnd 3 [sc in next st, inc in next st] repeat 6 times ()';
-let String4TotalCharacterNumber = String3.length;
+let String4 = 'Rnd 4 [2sc, inc in next st] repeat 6 times (24)';
+let String4TotalCharacterNumber = String4.length;
 let String4IterationIndex = 0;
 
 // Create ONE bubble span for the second line
@@ -80,3 +80,24 @@ let String4Interval = setInterval(function () {
     }
 
 }, 10);
+
+let String5 = 'Rnd 5 sc 24 times (24)';
+let String5TotalCharacterNumber = String5.length;
+let String5IterationIndex = 0;
+
+// Create ONE bubble span for the second line
+$("#typewriting-target5").append('<span class="lineBubble"></span>');
+let bubble5 = $("#typewriting-target5 .lineBubble");
+
+let String5Interval = setInterval(function () {
+    // Type characters inside the single bubble
+    bubble5.append(String5.charAt(String5IterationIndex));
+
+    String5IterationIndex++;
+
+    if (String5IterationIndex === String5TotalCharacterNumber) {
+        clearInterval(String5Interval);
+    }
+
+}, 10);
+
